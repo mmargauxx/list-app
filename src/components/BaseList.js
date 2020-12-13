@@ -3,7 +3,7 @@ import Base from "./Base";
 
 export default function BaseList({ list }) {
   return (
-    <ul className="ingredients">
+    <ul className="bases">
       {list.map((base, i) => (
         <Base key={i} {...base} />
       ))}
