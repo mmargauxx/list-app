@@ -1,14 +1,14 @@
 import React from "react";
 import Pokemon from "./Pokemon";
 
-function Menu({ recipes }) {
+function Pokedex({ pokemons }) {
   return (
     <article>
       <header>
         <h1>Pokedex</h1>
       </header>
-      <div className="recipes">
-        {pokemon.map((pokemon, i) => (
+      <div className="pokemons">
+        {pokemons.map((pokemon, i) => (
           <Pokemon key={i} {...pokemon} />
         ))}
       </div>
@@ -16,4 +16,4 @@ function Menu({ recipes }) {
   );
 }
 
-export default Menu;
+export default Pokedex;
