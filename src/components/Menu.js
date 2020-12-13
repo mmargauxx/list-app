@@ -1,5 +1,5 @@
 import React from "react";
-import Recipe from "./Recipe";
+import Pokemon from "./Pokemon";
 
 function Menu({ recipes }) {
   return (
@@ -8,8 +8,8 @@ function Menu({ recipes }) {
         <h1>Pokedex</h1>
       </header>
       <div className="recipes">
-        {recipes.map((recipe, i) => (
-          <Recipe key={i} {...recipe} />
+        {pokemon.map((pokemon, i) => (
+          <Pokemon key={i} {...pokemon} />
         ))}
       </div>
     </article>

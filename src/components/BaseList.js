@@ -1,5 +1,5 @@
 import React from "react";
-import Ingredient from "./Base";
+import Base from "./Base";
 
 export default function BaseList({ list }) {
   return (

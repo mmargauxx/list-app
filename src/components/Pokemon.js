@@ -1,15 +1,15 @@
 import React from "react";
-import IngredientsList from "./IngredientsList";
+import BaseList from "./BaseList";
 import Instructions from "./Instructions";
 
-function Recipe({ name, ingredients, steps }) {
+function Pokemon({ name, ingredients, steps }) {
   return (
     <section id={name.toLowerCase().replace(/ /g, "-")}>
       <h1>{name}</h1>
-      <IngredientsList list={ingredients} />
+      <BaseList list={base} />
       <Instructions title="Cooking Instructions" steps={steps} />
     </section>
   );
 }
 
-export default Recipe;
+export default Pokemon;
