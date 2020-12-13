@@ -1,9 +1,9 @@
 import React from "react";
 import { render } from "react-dom";
-import Menu from "./components/Menu";
+import Pokedex from "./components/Pokedex";
 import data from "./data/pokedata.json";
 
 render(
-  <Menu recipes={data} />,
+  <Pokedex pokemons={data} />,
   document.getElementById("root")
 );
