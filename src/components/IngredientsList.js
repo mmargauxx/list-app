@@ -1,11 +1,11 @@
 import React from "react";
-import Ingredient from "./Ingredient";
+import Ingredient from "./Base";
 
-export default function IngredientsList({ list }) {
+export default function BaseList({ list }) {
   return (
     <ul className="ingredients">
-      {list.map((ingredient, i) => (
-        <Ingredient key={i} {...ingredient} />
+      {list.map((base, i) => (
+        <Base key={i} {...base} />
       ))}
     </ul>
   );
